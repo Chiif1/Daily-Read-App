@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recycerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="4dp"
+       android:scrollbars="vertical" />
+
+   <!-- <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/TopStoryRelLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/appTitle"
+        android:text="My Daily Read"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/titleLine"
+        android:layout_below="@+id/appTitle"
+        android:background="@android:color/black" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/TopStoryRelLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight='10dp'
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/storyHolder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="330dp"
+                    android:layout_height="200dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/title1"
+                    style="@style/topTitleFormat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image1"
+                    android:ellipsize="end"/>
+
+                <TextView
+                    android:id="@+id/name1"
+                    style="@style/topNameFormat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@id/holdList2"
+                style="@style/holdListFormat"
+                android:layout_below="@id/storyHolder1">
+
+                <LinearLayout
+                    android:id="@+id/storyHolder2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/Title2"
+                        style="@style/secondarytitleFormat"/>
+
+                    <TextView
+                        android:id="@+id/name2"
+                        style="@style/SecondaryNameFormat"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image2"
+                    style="@style/ImageListSize"
+                    android:layout_toRightOf="@+id/storyHolder2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/holdList3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/holdListFormat"
+                android:layout_below="@+id/holdList2">
+
+                <LinearLayout
+                    android:id="@+id/storyHolder3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Title3"
+                        style="@style/secondarytitleFormat"/>
+
+                    <TextView
+                        android:id="@+id/name3"
+                        style="@style/SecondaryNameFormat"
+                        android:layout_marginBottom="10dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image3"
+                    style="@style/ImageListSize"
+                    android:layout_toRightOf="@id/storyHolder3" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/holdList4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/holdListFormat"
+                android:layout_below="@id/holdList2">
+
+                <LinearLayout
+                    android:id="@+id/storyHolder4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Title4"
+                        style="@style/secondarytitleFormat"/>
+
+                    <TextView
+                        android:id="@+id/name4"
+                        style="@style/SecondaryNameFormat"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image4"
+                    style="@style/ImageListSize"
+                    android:layout_toRightOf="@id/storyHolder4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/holdList5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/holdListFormat"
+                android:layout_below="@id/holdList2">
+
+                <LinearLayout
+                    android:id="@+id/storyHolder5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Title5"
+                        style="@style/secondarytitleFormat"/>
+
+                    <TextView
+                        android:id="@+id/name5"
+                        style="@style/SecondaryNameFormat"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image5"
+                    style="@style/ImageListSize"
+                    android:layout_toRightOf="@id/storyHolder5" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>-->
+</RelativeLayout>

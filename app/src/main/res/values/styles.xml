@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="topTitleFormat">
+        <item name="android:textSize">40dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="topSourceFormat">
+        <item name="android:textSize">20dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="topNameFormat">
+        <item name="android:textSize">35dp</item>
+    </style>
+
+    <style name="secondarytitleFormat">
+        <item name="android:textSize">20dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">140dp</item>
+    </style>
+
+    <style name="SecondaryNameFormat">
+        <item name="android:textSize">20dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">140dp</item>
+    </style>
+
+    <style name="storyHolderFormat">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginRight">60dp</item>
+    </style>
+
+    <style name="RelList">
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">150dp</item>
+
+    </style>
+
+    <style name="holdListFormat">
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="ImageListSize">
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <!--<item name="android:layout_marginLeft">40dp</item>-->
+    </style>
+
+
+</resources>
